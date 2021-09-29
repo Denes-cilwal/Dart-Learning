@@ -1,7 +1,5 @@
 // constructurs
 
-import 'dart:html';
-
 class Student {
   // instance or field variable, by default it has null value
   int id = 2;

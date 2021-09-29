@@ -1,0 +1,30 @@
+supports 2 types of polymorphism:
+
+-static or compile-time
+-dynamic
+
+Static - overloading
+many other object-oriented programming languages, 
+allows you to implement multiple methods within the same class 
+that use the same name but a different set of parameters. 
+That is called method overloading and represents a static form of polymorphism.
+
+The parameter sets have to differ in at least one of the following three criteria:
+
+They need to have a different number of parameters, e.g. one method accepts 2 and another one 3 parameters.
+The types of the parameters need to be different, e.g. one method accepts a String and another one a Long.
+They need to expect the parameters in a different order, e.g. one method accepts a String and a Long and 
+another one accepts a Long and a String. This kind of overloading is not recommended because it makes the 
+API difficult to understand.In most cases, each of these overloaded methods provides a different but very 
+similar functionality.Due to the different sets of parameters, each method has a different signature. That 
+allows the compiler to identify which method has to be called and to bind it to the method call. 
+This approach is called static binding or static polymorphism.
+
+
+Dynamic- inheritance use - method overriding
+This form of polymorphism doesn’t allow the compiler to determine the executed method. 
+The VM needs to do that at runtime.
+Within an inheritance hierarchy, a subclass can override a method of its superclass. That enables 
+the developer of the subclass to customize or completely replace the behavior of that method.
+It also creates a form of polymorphism. Both methods, implemented by the super- and subclass, 
+share the same name and parameters but provide different functionality.
